@@ -1,16 +1,14 @@
 <?php
 require_once 'ligacaoBD.php';
-//Verifica a conexão á BD
+//Verifica a conexao a BD
 session_start();
 $_SESSION["sessionmaxtime"]=time();
-
 $con=LigaBD();
 
 if($stm=$con->prepare("select * from utilizadores where utilizador=? and password=?")){
+
 	$stm->bind_param("ss", $_POST["utilizador"], $_POST["password"]);
-
 	$stm->execute();
-
 	$stm->store_result();
 
 	if ($stm->num_rows>0) {

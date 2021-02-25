@@ -10,7 +10,7 @@ if (isset($_SESSION["sessionmaxtime"])&&(time()-$_SESSION["sessionmaxtime"])>60*
 else
 	if ($_SESSION["login"]==1 && $_SESSION["browser"]==$_SERVER["HTTP_USER_AGENT"]) {
 		return true;
-		# code...
+	
 	}
 	
 	else{

@@ -6,6 +6,7 @@
 <body>
 <h1>Login</h1>
 <form action="session1.php" method="post">
+	
 	<b>Utilizador:</b><br>
 	<input type="text" name="utilizador"><br>
 	<b>Password:</b><br>
@@ -14,6 +15,5 @@
 
 
 </form>
-
 </body>
 </html>
